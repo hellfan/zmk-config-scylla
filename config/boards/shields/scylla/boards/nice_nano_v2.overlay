@@ -16,15 +16,16 @@
 //};
 //
 &spi3 {
-//    compatible = "nordic,nrf-spim";
-//    status = "okay";
-//
-//    pinctrl-0 = <&spi3_default>;
-//    pinctrl-1 = <&spi3_sleep>;
-//    pinctrl-names = "default", "sleep";
+    compatible = "nordic,nrf-spim";
+    status = "okay";
+    //
+    //    pinctrl-0 = <&spi3_default>;
+    //    pinctrl-1 = <&spi3_sleep>;
+    //    pinctrl-names = "default", "sleep";
 
     led_strip: sk6812@0 {
         compatible = "worldsemi,sk6812-spi";
+        label = "WS2812";
 
         /* SPI */
         reg = <0>; /* ignored, but necessary for SPI bindings */
