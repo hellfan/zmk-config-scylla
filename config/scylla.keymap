@@ -7,9 +7,9 @@
 #define SYM 1
 #define NAV 2
 
-&led_strip {
-    chain-length = <1>;
-};
+//&led_strip {
+//    chain-length = <1>;
+//};
 
 / {
     macros {
